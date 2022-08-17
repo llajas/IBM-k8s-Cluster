@@ -3,8 +3,8 @@ data ibm_resource_group "resource_group" {
 }
 resource ibm_container_cluster "tfcluster" {
 name            = "tfclusterdoc"
-datacenter      = "dal10"
-machine_type    = "b3c.4x16"
+datacenter      = "mil01"
+machine_type    = "free"
 hardware        = "shared"
 public_vlan_id  = "2234945"
 private_vlan_id = "2234947"
