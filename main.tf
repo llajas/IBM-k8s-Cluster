@@ -9,10 +9,7 @@ hardware        = "shared"
 
 kube_version = "1.23.9"
 
-default_pool_size = 3
-    
-public_service_endpoint  = "true"
-private_service_endpoint = "true"
+default_pool_size = 1
 
 resource_group_id = data.ibm_resource_group.resource_group.id
 }
