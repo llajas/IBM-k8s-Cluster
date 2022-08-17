@@ -6,8 +6,6 @@ name            = "tfclusterdoc"
 datacenter      = "mil01"
 machine_type    = "free"
 hardware        = "shared"
-public_vlan_id  = "2234945"
-private_vlan_id = "2234947"
 
 kube_version = "1.23.9"
 
