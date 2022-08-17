@@ -9,7 +9,7 @@ hardware        = "shared"
 public_vlan_id  = "2234945"
 private_vlan_id = "2234947"
 
-kube_version = "1.21.9"
+kube_version = "1.23.9"
 
 default_pool_size = 3
     
