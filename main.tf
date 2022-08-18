@@ -1,15 +1,14 @@
-data ibm_resource_group "resource_group" {
-    name = "Default"
-}
+variable "ibmcloud_api_key" {}
+
+provider "ibm" {
+    ibmcloud_api_key   = var.ibmcloud_api_key
+    }
+
 resource ibm_container_cluster "tfcluster" {
-name            = "tfclusterdoc"
-datacenter      = "dal10"
+name            = var.cluster_name
+datacenter      = "sjc04"
 machine_type    = "free"
 hardware        = "shared"
-
-kube_version = "1.23.9"
-
+kube_version = "1.24.3"
 default_pool_size = 1
-
-resource_group_id = data.ibm_resource_group.resource_group.id
 }
