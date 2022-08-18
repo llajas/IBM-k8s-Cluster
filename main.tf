@@ -3,7 +3,7 @@ data ibm_resource_group "resource_group" {
 }
 resource ibm_container_cluster "tfcluster" {
 name            = "tfclusterdoc"
-datacenter      = "mil01"
+datacenter      = "dal10"
 machine_type    = "free"
 hardware        = "shared"
 
